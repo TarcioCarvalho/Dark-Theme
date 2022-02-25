@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+body.dark {
+    background-color: #1E1E1E;
+}
+
+.container {
+    position: relative;
+    margin: 45vh auto;
+    height: 44px;
+    width: 90px;
+
+    border: solid 1px black;
+    border-radius: 24px;
+    background-color: #000;
+
+    caret-color: rgba(0,0,0,0);
+}
+
+.sun-icon {
+    background: center / contain no-repeat url("./assets/sun.svg");
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.moon-icon {
+    background: center / contain no-repeat url("./assets/moon.svg");
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    background-color: #FFF;
+    transition: transform 80ms linear;
+
+    /* stop blinking */
+    caret-color: rgba(0,0,0,0);
+}
+
+.ball.dark {
+    right: 2px;
+    transform: translateX(46px);
+}
+
+
+body.dark {
+    background-color: #292C35;
+}
